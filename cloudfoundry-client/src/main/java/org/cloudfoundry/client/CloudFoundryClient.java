@@ -64,6 +64,7 @@ import org.cloudfoundry.client.v3.routes.RoutesV3;
 import org.cloudfoundry.client.v3.serviceInstances.ServiceInstancesV3;
 import org.cloudfoundry.client.v3.servicebindings.ServiceBindingsV3;
 import org.cloudfoundry.client.v3.serviceplans.ServicePlansV3;
+import org.cloudfoundry.client.v3.serviceroutebindings.ServiceRouteBindingsV3;
 import org.cloudfoundry.client.v3.spaces.SpacesV3;
 import org.cloudfoundry.client.v3.tasks.Tasks;
 
@@ -276,6 +277,11 @@ public interface CloudFoundryClient {
      * Main entry point to the Cloud Foundry Service Plans V3 Client API
      */
     ServicePlansV3 servicePlansV3();
+
+    /**
+     * Main entry point to the Cloud Foundry Service Route Bindings V3 Client API
+     */
+    ServiceRouteBindingsV3 serviceRouteBindingsV3();
 
     /**
      * Main entry point to the Cloud Foundry Service Usage Events Client API
